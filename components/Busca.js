@@ -1,7 +1,7 @@
 import React, { useState} from 'react';
 import { View, StyleSheet } from 'react-native';
 import { Card, Paragraph, Text, TextInput, Searchbar } from 'react-native-paper';
-import BuscaResultado from "./BuscaResultado"
+
 
 export default function Busca({ navigation, route }) {
   const [query, setQuery] = useState('');

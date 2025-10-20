@@ -1,40 +1,42 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, Button, TouchableOpacity, StyleSheet } from 'react-native';
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import { View, Text, TextInput, Button, TouchableOpacity, StyleSheet, Alert } from 'react-native';
+import firebase from "../config/config"
 
 export default function Login({ navigation }) {
-  const [usuario, setUsuario] = useState('');
-  const [senha, setSenha] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
-  const ler = async () => {
-    try {
-      const senhaSalva = await AsyncStorage.getItem(usuario);
-      if (senhaSalva != null) {
-        if (senhaSalva === senha) {
-          navigation.navigate('Perfil', { usuario });
+  const ler = () =>{
+    firebase.auth()
+    .signInWithEmailAndPassword(email, password)
+      .then(() => {
+        Alert.alert("Logado!!!", "Login realizado com sucesso!");
+        navigation.navigate("Perfil", { email });
+      })
+      .catch(error => {
+        const errorCode = error.code;
+        if (errorCode == "auth/invalid-email") {
+          console.log("Formato do email invalido");
+          Alert.alert("Formato do email invalido");
         } else {
-          alert('Senha incorreta!');
+          console.log("Erro Desconhecido");
+          Alert.alert("Ocorreu um erro");
         }
-      } else {
-        alert('Usuário não foi encontrado!');
-      }
-    } catch (erro) {
-      console.log(erro);
-    }
-  };
+      });
+  }
 
   return (
     <View>
       <Text>Usuário:</Text>
       <TextInput
-        value={usuario}
-        onChangeText={setUsuario}
+        value={email}
+        onChangeText={setEmail}
         style={{ borderWidth: 1, marginBottom: 8, padding: 4 }}
       />
       <Text>Senha:</Text>
       <TextInput
-        value={senha}
-        onChangeText={setSenha}
+        value={password}
+        onChangeText={setPassword}
         secureTextEntry
         style={{ borderWidth: 1, marginBottom: 8, padding: 4 }}
       />

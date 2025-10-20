@@ -4,7 +4,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { View } from 'react-native';
-import { Card, Paragraph } from 'react-native-paper';
+import { Card, Paragraph, Appbar } from 'react-native-paper';
 
 import Login from './components/Login';
 import Cadastro from './components/Cadastro';
@@ -12,6 +12,7 @@ import Perfil from './components/Perfil';
 import Inicio from './components/Inicio';
 import Busca from './components/Busca';
 import BuscaResultado from './components/BuscaResultado';
+import Teste from './components/Teste';
 import Livro from './components/Livro';
 
 
@@ -23,7 +24,27 @@ function NavBusca() {
   return (
     <Stack.Navigator>
       <Stack.Screen name="Busca" component={Busca} />
-      <Stack.Screen name="Resultado" component={BuscaResultado} />
+      <Stack.Screen
+        name="Resultado"
+        component={BuscaResultado}
+        options={{
+          title: 'Título',
+          headerRight: () => (
+            <View style={{ flexDirection: 'row', marginRight: 10 }}>
+              <Appbar.Action
+                icon="filter"
+                color="black"
+                size={24}
+                onPress={() => {
+                  console.log('Filtro pressionado');
+                }}
+              />
+            </View>
+          ),
+        }}
+      />
+
+      <Stack.Screen name="Teste" component={Teste} />
     </Stack.Navigator>
   );
 }
