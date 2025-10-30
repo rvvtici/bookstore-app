@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { View, FlatList, StyleSheet, Image, Dimensions, Platform } from 'react-native';
 import { Card, Text, SegmentedButtons, Chip, Appbar, ToggleButton, Menu, IconButton } from 'react-native-paper';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
-import firebase from '../config/config';
+import firebase from '../../config/config';
 
 const screenWidth = Dimensions.get('window').width;
 

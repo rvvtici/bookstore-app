@@ -6,25 +6,36 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { View } from 'react-native';
 import { Card, Paragraph, Appbar } from 'react-native-paper';
 
-import Login from './components/Login';
-import Cadastro from './components/Cadastro';
-import Perfil from './components/Perfil';
-import Inicio from './components/Inicio';
-import Busca from './components/Busca';
-import BuscaResultado from './components/BuscaResultado';
-import Teste from './components/Teste';
-import Livro from './components/Livro';
+import Inicio from './components/Home/Inicio';
+import ContainerLivros from './components/Home/ContainerLivros';
+
+import Busca from './components/Busca/Busca';
+import BuscaResultado from './components/Busca/BuscaResultado';
+import Livro from './components/Busca/Livro';
+import LivroDetalhes from './components/Busca/LivroDetalhes';
+
+import Salvos from './components/Salvos/Salvos';
+
+import Perfil from './components/Perfil/Perfil';
+import Login from './components/Perfil/Login';
+import Cadastro from './components/Perfil/Cadastro';
+import Carrinho from './components/Perfil/Carrinho';
+import Compras from './components/Perfil/Compras';
+import EditarPerfil from './components/Perfil/EditarPerfil';
 
 
 const Tab = createBottomTabNavigator();
-const Stack = createStackNavigator();
+const HomeStack = createStackNavigator();
+const BuscaStack = createStackNavigator();
+const SalvosStack = createStackNavigator();
+const PerfilStack = createStackNavigator();
 
 
 function NavBusca() {
   return (
-    <Stack.Navigator>
-      <Stack.Screen name="Busca" component={Busca} />
-      <Stack.Screen
+    <BuscaStack.Navigator>
+      <BuscaStack.Screen name="Busca" component={Busca} />
+      <BuscaStack.Screen
         name="Resultado"
         component={BuscaResultado}
         options={{
@@ -43,19 +54,43 @@ function NavBusca() {
           ),
         }}
       />
-
-      <Stack.Screen name="Teste" component={Teste} />
-    </Stack.Navigator>
+      <BuscaStack.Screen name="LivroDetalhes" component={LivroDetalhes} />
+      <BuscaStack.Screen name="Carrinho" component={Carrinho} />
+    </BuscaStack.Navigator>
   );
 }
 
 function NavPerfil() {
   return (
-    <Stack.Navigator>
-      <Stack.Screen name="Login" component={Login} />
-      <Stack.Screen name="Perfil" component={Perfil} />
-      <Stack.Screen name="Cadastro" component={Cadastro} />
-    </Stack.Navigator>
+    <PerfilStack.Navigator>
+      <PerfilStack.Screen name="Perfil" component={Perfil} />
+      <PerfilStack.Screen name="Login" component={Login} />
+      <PerfilStack.Screen name="Cadastro" component={Cadastro} />
+    
+      <PerfilStack.Screen name="Carrinho" component={Carrinho} />
+      <PerfilStack.Screen name="Compras" component={Compras} />
+      <PerfilStack.Screen name="Editar Perfil" component={EditarPerfil} />
+    
+    </PerfilStack.Navigator>
+  );
+}
+
+function NavHome() {
+  return (
+    <HomeStack.Navigator>
+      <HomeStack.Screen name="Inicio" component={Inicio} />
+      <HomeStack.Screen name="ContainerLivros" component={ContainerLivros} />
+      <HomeStack.Screen name="LivroDetalhes" component={LivroDetalhes} />
+    </HomeStack.Navigator>
+  );
+}
+
+function NavSalvos() {
+  return (
+    <SalvosStack.Navigator>
+      <SalvosStack.Screen name="Salvos" component={Salvos} />
+      <SalvosStack.Screen name="LivroDetalhes" component={LivroDetalhes} />
+    </SalvosStack.Navigator>
   );
 }
 
@@ -66,7 +101,7 @@ export default function App() {
 
       <Tab.Screen
         name="Inicio"
-        component={Inicio}
+        component={NavHome}
         options={{
           tabBarIcon: ({color,size}) => (
             <MaterialCommunityIcons name="home"
@@ -89,11 +124,11 @@ export default function App() {
         />
 
       <Tab.Screen
-        name="Livro"
-        component={Livro}
+        name="Salvos"
+        component={NavSalvos}
         options={{
           tabBarIcon: ({color,size}) => (
-            <MaterialCommunityIcons name="book"
+            <MaterialCommunityIcons name="bookmark"
             color={color} size={size}/>
           ),
           headerShown: false,
