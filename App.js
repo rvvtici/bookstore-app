@@ -12,7 +12,7 @@ import ContainerLivros from './components/Home/ContainerLivros';
 import Busca from './components/Busca/Busca';
 import BuscaResultado from './components/Busca/BuscaResultado';
 import Livro from './components/Busca/Livro';
-import LivroDetalhes from './components/Busca/LivroDetalhes';
+// import LivroDetalhes from './components/Busca/LivroDetalhes';
 
 import Salvos from './components/Salvos/Salvos';
 
@@ -39,7 +39,7 @@ function NavBusca() {
         name="Resultado"
         component={BuscaResultado}
         options={{
-          title: 'Título',
+          title: 'Resultado',
           headerRight: () => (
             <View style={{ flexDirection: 'row', marginRight: 10 }}>
               <Appbar.Action
@@ -54,7 +54,7 @@ function NavBusca() {
           ),
         }}
       />
-      <BuscaStack.Screen name="LivroDetalhes" component={LivroDetalhes} />
+      <BuscaStack.Screen name="Livro" component={Livro} />
       <BuscaStack.Screen name="Carrinho" component={Carrinho} />
     </BuscaStack.Navigator>
   );
@@ -78,9 +78,9 @@ function NavPerfil() {
 function NavHome() {
   return (
     <HomeStack.Navigator>
-      <HomeStack.Screen name="Inicio" component={Inicio} />
-      <HomeStack.Screen name="ContainerLivros" component={ContainerLivros} />
-      <HomeStack.Screen name="LivroDetalhes" component={LivroDetalhes} />
+      <HomeStack.Screen name="Início" component={Inicio} />
+      <HomeStack.Screen name="Container" component={ContainerLivros} />
+      <HomeStack.Screen name="Livro" component={Livro} />
     </HomeStack.Navigator>
   );
 }
@@ -89,7 +89,7 @@ function NavSalvos() {
   return (
     <SalvosStack.Navigator>
       <SalvosStack.Screen name="Salvos" component={Salvos} />
-      <SalvosStack.Screen name="LivroDetalhes" component={LivroDetalhes} />
+      <SalvosStack.Screen name="Livro" component={Livro} />
     </SalvosStack.Navigator>
   );
 }
@@ -116,7 +116,7 @@ export default function App() {
         component={NavBusca}
         options={{
           tabBarIcon: ({color,size}) => (
-            <MaterialCommunityIcons name="search-web"
+            <MaterialCommunityIcons name="magnify"
             color={color} size={size}/>
           ),
           headerShown: false,

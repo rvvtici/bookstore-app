@@ -1,8 +1,17 @@
 import React, { useState } from 'react';
-import { TextInput, Text, View, Button, Alert } from 'react-native';
+import { TextInput, Text, View, TouchableOpacity, Alert, StyleSheet } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { auth, db } from '../../config/config';
-import firebase from 'firebase';
+import firebase from '../../config/config';
+
+const cores = {
+  verde: '#515f51',
+  preto: '#3A3A3A',
+  branco: '#E8E8E8',
+  amarelo: '#E5DFCE',
+  amareloEscuro: '#7D6E46',
+  cinza: '#646464',
+  vermelho: '#733232',
+};
 
 const Cadastro = ({ navigation }) => {
   const [email, setEmail] = useState('');
@@ -26,45 +35,33 @@ const Cadastro = ({ navigation }) => {
     }
 
     try {
-      const userCredential = await auth.createUserWithEmailAndPassword(email, senha);
+      const userCredential = await firebase.auth().createUserWithEmailAndPassword(email, senha);
       const user = userCredential.user;
-      
-      const token = await user.getIdToken();
-      
+      const uid = user.uid;
+      const token = await user.getIdToken(); //do proprio firebase
+
       await AsyncStorage.setItem('firebaseToken', token);
       await AsyncStorage.setItem('userEmail', user.email);
-      
-      await db.collection('users').doc(user.email).set({
+      await AsyncStorage.setItem('userUid', uid);
+
+      //novo objeto na tabela users
+      await firebase.database().ref('users/' + uid).set({
+        uid,
         email: user.email,
         livrosSalvos: [],
-        dataCadastro: firebase.firestore.FieldValue.serverTimestamp(),
-        ultimoAcesso: firebase.firestore.FieldValue.serverTimestamp()
       });
-      
-      console.log('Conta criada com sucesso!');
-      
-      Alert.alert(
-        'Sucesso', 
-        'Conta criada com sucesso!',
-        [
-          {
-            text: 'OK',
-            onPress: () => {
-              setEmail('');
-              setSenha('');
-              setConfirmarSenha('');
-              
-              navigation.navigate('LoginStack', {
-                screen: 'Perfil',
-                params: { 
-                  usuario: user.email,
-                  token: token 
-                }
-              });
-            }
-          }
-        ]
-      );
+
+      Alert.alert('Sucesso', 'Conta criada com sucesso! Faça login para continuar.', [
+        {
+          text: 'OK',
+          onPress: () => {
+            setEmail('');
+            setSenha('');
+            setConfirmarSenha('');
+            navigation.navigate('Login');
+          },
+        },
+      ]);
       
     } catch (error) {
       console.log('Erro no cadastro:', error);
@@ -86,45 +83,101 @@ const Cadastro = ({ navigation }) => {
   };
 
   return (
-    <View style={{padding: 20}}>
-      <Text style={{fontSize: 18, marginBottom: 10}}>Email:</Text>
-      <TextInput 
-        onChangeText={setEmail}
-        style={{borderWidth: 1, marginBottom: 15, padding: 10, borderRadius: 5}}
-        placeholder="seu@email.com"
-        autoCapitalize="none"
+    <View style={styles.container}>
+      <Text style={styles.titulo}>Criar Conta</Text>
+      <Text style={styles.subtitulo}>Preencha os dados abaixo</Text>
+
+      <TextInput
+        style={styles.input}
+        placeholder="Email"
+        placeholderTextColor={cores.cinza}
         keyboardType="email-address"
+        autoCapitalize="none"
         value={email}
+        onChangeText={setEmail}
       />
-      
-      <Text style={{fontSize: 18, marginBottom: 10}}>Senha:</Text>
-      <TextInput 
-        onChangeText={setSenha}
-        secureTextEntry={true}
-        style={{borderWidth: 1, marginBottom: 15, padding: 10, borderRadius: 5}}
-        placeholder="Mínimo 6 caracteres"
+
+      <TextInput
+        style={styles.input}
+        placeholder="Senha"
+        placeholderTextColor={cores.cinza}
+        secureTextEntry
         value={senha}
+        onChangeText={setSenha}
       />
-      
-      <Text style={{fontSize: 18, marginBottom: 10}}>Confirmar Senha:</Text>
-      <TextInput 
-        onChangeText={setConfirmarSenha}
-        secureTextEntry={true}
-        style={{borderWidth: 1, marginBottom: 20, padding: 10, borderRadius: 5}}
-        placeholder="Digite novamente sua senha"
+
+      <TextInput
+        style={styles.input}
+        placeholder="Confirmar senha"
+        placeholderTextColor={cores.cinza}
+        secureTextEntry
         value={confirmarSenha}
+        onChangeText={setConfirmarSenha}
       />
-      
-      <Button title="Criar Conta" onPress={criarUsuario}/>
-      <View style={{marginTop: 10}}>
-        <Button 
-          title="Voltar para Login" 
-          onPress={() => navigation.navigate('LoginStack')} 
-          color="gray"
-        />
-      </View>
+
+      <TouchableOpacity style={styles.botaoCriar} onPress={criarUsuario}>
+        <Text style={styles.textoBotaoCriar}>Criar conta</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity onPress={() => navigation.navigate('Login')} style={styles.botaoSecundario}>
+        <Text style={styles.textoBotaoSecundario}>Voltar para o login</Text>
+      </TouchableOpacity>
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: cores.amarelo,
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 30,
+  },
+  titulo: {
+    fontSize: 26,
+    fontWeight: 'bold',
+    color: cores.verde,
+    marginBottom: 8,
+  },
+  subtitulo: {
+    fontSize: 15,
+    color: cores.amareloEscuro,
+    marginBottom: 25,
+  },
+  input: {
+    width: '100%',
+    backgroundColor: cores.branco,
+    borderRadius: 12,
+    paddingVertical: 12,
+    paddingHorizontal: 16,
+    fontSize: 16,
+    color: cores.preto,
+    marginBottom: 15,
+    borderWidth: 1,
+    borderColor: cores.amareloEscuro,
+  },
+  botaoCriar: {
+    backgroundColor: cores.amareloEscuro,
+    width: '100%',
+    borderRadius: 12,
+    paddingVertical: 14,
+    alignItems: 'center',
+    marginTop: 10,
+  },
+  textoBotaoCriar: {
+    color: cores.branco,
+    fontSize: 17,
+    fontWeight: 'bold',
+  },
+  botaoSecundario: {
+    marginTop: 20,
+  },
+  textoBotaoSecundario: {
+    color: cores.verde,
+    fontSize: 16,
+    textDecorationLine: 'underline',
+  },
+});
 
 export default Cadastro;

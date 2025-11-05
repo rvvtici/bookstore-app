@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Alert } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { auth } from '../../config/config';
+import { CommonActions } from '@react-navigation/native';
 
 export const useAuth = (navigation) => {
   const [usuario, setUsuario] = useState('');
@@ -9,7 +10,7 @@ export const useAuth = (navigation) => {
   const [tokenValido, setTokenValido] = useState(false);
 
   useEffect(() => {
-    // Listener de autenticação
+    // listener de autenticação
     const unsubscribe = auth.onAuthStateChanged(async (user) => {
       if (user) {
         const newToken = await user.getIdToken();
@@ -20,12 +21,9 @@ export const useAuth = (navigation) => {
         setTokenValido(true);
       } else {
         setTokenValido(false);
-        Alert.alert('Sessão expirada', 'Faça login novamente');
         navigation.navigate('Login');
       }
     });
-
-    // Verificar token ao montar componente
     verificarToken();
 
     return () => unsubscribe();
@@ -46,7 +44,6 @@ export const useAuth = (navigation) => {
         setUsuario(emailStorage);
       } else {
         setTokenValido(false);
-        Alert.alert('Sessão expirada', 'Faça login novamente');
         navigation.navigate('Login');
       }
     } catch (error) {
@@ -60,7 +57,16 @@ export const useAuth = (navigation) => {
       await AsyncStorage.removeItem('firebaseToken');
       await AsyncStorage.removeItem('userEmail');
       await auth.signOut();
-      navigation.navigate('Login');
+
+
+      navigation.dispatch(
+        CommonActions.reset({
+          index: 0,
+          routes: [{ name: 'Login' }],
+        })
+      );
+
+      
     } catch (error) {
       console.log('Erro no logout:', error);
       Alert.alert('Erro', 'Não foi possível fazer logout');
