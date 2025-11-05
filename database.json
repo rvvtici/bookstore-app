@@ -1,0 +1,366 @@
+{
+  "users": {
+  },
+
+  "escritor": {
+    "escritor1": { "id": "escritor1", "nome": "Clarice Lispector", "nascimento": "1920-12-10", "pais": "Brasil" },
+    "escritor2": { "id": "escritor2", "nome": "Machado de Assis", "nascimento": "1839-06-21", "pais": "Brasil" },
+    "escritor3": { "id": "escritor3", "nome": "George Orwell", "nascimento": "1903-06-25", "pais": "Inglaterra" },
+    "escritor4": { "id": "escritor4", "nome": "Gabriel García Márquez", "nascimento": "1927-03-06", "pais": "Colômbia" },
+    "escritor5": { "id": "escritor5", "nome": "Isabel Allende", "nascimento": "1942-08-02", "pais": "Chile" },
+    "escritor6": { "id": "escritor6", "nome": "Haruki Murakami", "nascimento": "1949-01-12", "pais": "Japão" },
+    "escritor7": { "id": "escritor7", "nome": "Fiódor Dostoiévski", "nascimento": "1821-11-11", "pais": "Rússia" }
+  },
+
+  
+  "editora": {
+    "editora1": { "id": "editora1", "nome": "Companhia das Letras" },
+    "editora2": { "id": "editora2", "nome": "Editora 34" },
+    "editora3": { "id": "editora3", "nome": "Rocco" },
+    "editora4": { "id": "editora4", "nome": "Record" },
+    "editora5": { "id": "editora5", "nome": "Objetiva" },
+    "editora6": { "id": "editora6", "nome": "Alfaguara"}
+  },
+  "livro": {
+    "livro1": {
+      "id": "livro1",
+      "id_escritor": "escritor1",
+      "id_editora": "editora1",
+      "titulo": "A Hora da Estrela",
+      "ano": 1977,
+      "numPags": 88,
+      "estadoConservacao": "em perfeito estado de conservação / sem amarelados / sem grifos ou rasuras / sem marcas de manuseio nas bordas",
+      "descricao": "A Hora da Estrela é o último romance de Clarice Lispector. A narrativa segue Macabéa, uma jovem nordestina deslocada no Rio de Janeiro, acompanhada pela voz íntima e reflexiva do narrador. Com prosa singela e ao mesmo tempo densamente introspectiva, o livro explora temas como a invisibilidade social, a condição feminina, a busca por identidade e a dura realidade da pobreza. A obra mistura ternura e ironia, é curta mas profundamente impactante, e revela a sensibilidade única da autora ao tratar do humano em suas pequenas grandezas.",
+      "genero": "Romance",
+      "ISBN": "9786555320350",
+      "lingua": "Português",
+      "capa": "https://cdn.discordapp.com/attachments/1174443010486980689/1435008160363581570/firefox_jBJFrfhEVh.png?ex=690a66fe&is=6909157e&hm=42546ceb347427f1172096c113dd65df5a976d461940e1e4e4269d35d5490ab2&",
+      "preco": 29.90,
+      "estoque": 1
+    },
+
+"livro2": {
+  "id": "livro2",
+  "id_escritor": "escritor2",
+  "id_editora": "editora1",
+  "titulo": "Dom Casmurro",
+  "ano": 1899,
+  "numPags": 256,
+  "estadoConservacao": "usado / sem amarelados / com grifos / com marcas de manuseio nas bordas",
+  "descricao": "Dom Casmurro, de Machado de Assis, é um clássico da literatura brasileira que acompanha a memória e as percepções de Bento Santiago (Bentinho). A narrativa, construída com ironia e sutileza psicológica, investiga ciúmes, dúvida e as ambiguidades da lembrança. Ao longo do romance, o leitor é levado a confrontar a confiabilidade do narrador e a complexidade das relações humanas, com linguagem refinada e análise social profunda.",
+  "genero": "Romance",
+  "ISBN": "9788582850350",
+  "lingua": "Português",
+  "capa": "https://cdn.discordapp.com/attachments/1174443010486980689/1435008159688429729/firefox_EFwbinirKT.png?ex=690a66fe&is=6909157e&hm=8918a4636f5afe8c4e402212995528784f294b8a3336fde1ced69d9f92a9c245&",
+  "preco": 24.50,
+  "estoque": 1
+},
+
+
+    "livro3": {
+      "id": "livro3",
+      "id_escritor": "escritor3",
+      "id_editora": "editora3",
+      "titulo": "A Revolução dos Bichos",
+      "ano": 1945,
+      "numPags": 152,
+      "estadoConservacao": "em perfeito estado de conservação / mínimos amarelados na borda externa / sem grifos ou rasuras / sem marcas de manuseio nas bordas",
+      "descricao": "A Revolução dos Bichos (Animal Farm), de George Orwell, é uma fábula política que satiriza a corrupção do poder. Utilizando animais em uma fazenda como personagens, o autor expõe como ideais revolucionários podem degenerar em tirania, explorando manipulação, retórica e vigilância. A obra permanece como uma crítica mordaz a regimes totalitários e à dinâmica do poder.",
+      "genero": "Fábula Política",
+      "ISBN": "9788535909555",
+      "lingua": "Português",
+      "capa": "https://cdn.discordapp.com/attachments/1174443010486980689/1435008159231246448/firefox_p7ELjtIyrT.png?ex=690a66fe&is=6909157e&hm=2c6e2889a79ec950dadec84f3058c68564d3ac1c96aefafd18560cf70fab6309&",
+      "preco": 32.00,
+      "estoque": 1
+    },
+
+    "livro4": {
+      "id": "livro4",
+      "id_escritor": "escritor4",
+      "id_editora": "editora4",
+      "titulo": "Cem Anos de Solidão",
+      "ano": 1967,
+      "numPags": 417,
+      "estadoConservacao": "em perfeito estado de conservação / sem amarelados / sem grifos ou rasuras / sem marcas de manuseio nas bordas",
+      "descricao": "Cem Anos de Solidão é a obra-prima de Gabriel García Márquez que conta a saga da família Buendía na cidade fictícia de Macondo. Repleta de elementos do realismo mágico, a narrativa conecta gerações, paixões, tragédias e acontecimentos fantásticos, tecendo uma história épica sobre memória, destino e isolamento. A prosa é rica, imagética e repleta de episódios memoráveis.",
+      "genero": "Realismo Mágico",
+      "ISBN": "9788501012074",
+      "lingua": "Português",
+      "capa": "https://cdn.discordapp.com/attachments/1174443010486980689/1435008175387705386/firefox_6gzU1b6XHM.png?ex=690a6702&is=69091582&hm=7755c68cbe5c0665ccd415c6d942224a0e1b20ada6d578a69049d6a383effd55&",
+      "preco": 45.00,
+      "estoque": 1
+    },
+
+    "livro5": {
+      "id": "livro5",
+      "id_escritor": "escritor5",
+      "id_editora": "editora4",
+      "titulo": "A Casa dos Espíritos",
+      "ano": 1982,
+      "numPags": 350,
+      "estadoConservacao": "em perfeito estado de conservação / sem amarelados / sem grifos ou rasuras / sem marcas de manuseio nas bordas",
+      "descricao": "A Casa dos Espíritos, de Isabel Allende, acompanha a história de uma família ao longo de várias gerações, misturando política, paixão e elementos sobrenaturais. O romance explora memórias, segredos e transformações sociais, com personagens fortes e enredos que atravessam o tempo, combinando realismo e fantasia de maneira envolvente.",
+      "genero": "Romance",
+      "ISBN": "9788528622560",
+      "lingua": "Português",
+      "capa": "https://cdn.discordapp.com/attachments/1174443010486980689/1435008174913487019/firefox_CD1C5cORiv.png?ex=690a6702&is=69091582&hm=448a9561e70ed08e369131d3776ad679a416afbf2ac6c6a2ce52bd0633c60b20&",
+      "preco": 40.00,
+      "estoque": 1
+    },
+
+    "livro6": {
+      "id": "livro6",
+      "id_escritor": "escritor6",
+      "id_editora": "editora5",
+      "titulo": "Kafka à Beira-Mar",
+      "ano": 2002,
+      "numPags": 505,
+      "estadoConservacao": "em perfeito estado de conservação / sem amarelados / sem grifos ou rasuras / sem marcas de manuseio nas bordas",
+      "descricao": "Kafka à Beira-Mar, de Haruki Murakami, é um romance que combina realismo e elementos surreais, acompanhando duas tramas que se entrelaçam: a de um jovem fugindo de casa e a de um homem idoso com habilidades estranhas. A narrativa é repleta de simbolismo, personagens singulares e uma atmosfera onírica que convida à reflexão sobre destino, memória e identidade.",
+      "genero": "Ficção Contemporânea",
+      "ISBN": "ISBN_TO_VERIFY",
+      "lingua": "Português",
+      "capa": "https://cdn.discordapp.com/attachments/1174443010486980689/1435008176134160427/firefox_uobpUv7DQA.png?ex=690a6702&is=69091582&hm=68688daba6984a52805968fac82953f26805314317fcbd7061e9b092b16d3cba&",
+      "preco": 48.00,
+      "estoque": 1
+    },
+
+    "livro7": {
+      "id": "livro7",
+      "id_escritor": "escritor6",
+      "id_editora": "editora5",
+      "titulo": "1Q84",
+      "ano": 2009,
+      "numPags": 928,
+      "estadoConservacao": "em perfeito estado de conservação / sem amarelados / sem grifos ou rasuras / sem marcas de manuseio nas bordas",
+      "descricao": "1Q84 é um ambicioso romance de Haruki Murakami que mistura suspense, romance e fantasia, ambientado em um ano alternativo. A obra explora realidades paralelas, amor e o mundo oculto de personagens complexos, com uma escrita que mescla o prosaico e o fabuloso.",
+      "genero": "Ficção Contemporânea",
+      "ISBN": "9788579621802",
+      "lingua": "Português",
+      "capa": "https://cdn.discordapp.com/attachments/1174443010486980689/1435008200029114589/firefox_K7NrKZhsaW.png?ex=690a6708&is=69091588&hm=9c4365f16f8571fcf70bf74ad61358503418517ec54d8e71d194a1093b5efdf0&",
+      "preco": 55.00,
+      "estoque": 1
+    },
+
+    "livro8": {
+      "id": "livro8",
+      "id_escritor": "escritor7",
+      "id_editora": "editora4",
+      "titulo": "Crime e Castigo",
+      "ano": 1866,
+      "numPags": 430,
+      "estadoConservacao": "usado / mínimos amarelados na borda externa / sem grifos ou rasuras / com marcas de manuseio nas bordas",
+      "descricao": "Crime e Castigo, de Fiódor Dostoiévski, é um romance psicológico centrado em Raskólnikov, um jovem que comete um crime e vivencia profundas angústias morais e existenciais. A obra explora culpa, redenção, moralidade e a condição humana em uma prosa intensa e multifacetada.",
+      "genero": "Romance",
+      "ISBN": "9788573266467",
+      "lingua": "Português",
+      "capa": "https://cdn.discordapp.com/attachments/1174443010486980689/1435008198560972922/firefox_lYmiSLyLNv.png?ex=690a6707&is=69091587&hm=8518502d9b62fadbef9a2036d027cb32722a3f92723ea2c2f79ee1e7dfeb181c&",
+      "preco": 35.00,
+      "estoque": 1
+    },
+
+    "livro9": {
+      "id": "livro9",
+      "id_escritor": "escritor7",
+      "id_editora": "editora5",
+      "titulo": "O Idiota",
+      "ano": 1869,
+      "numPags": 656,
+      "estadoConservacao": "usado / mínimos amarelados na borda externa / sem grifos ou rasuras / com marcas de manuseio nas bordas",
+      "descricao": "O Idiota, de Dostoiévski, acompanha a figura do príncipe Míchkin, cuja bondade e ingenuidade conflitam com a corrupção e hipocrisia da sociedade ao seu redor. Romance profundo sobre moralidade, compaixão e conflitos humanos, com personagens intensamente construídos.",
+      "genero": "Romance",
+      "ISBN": "9786555250268",
+      "lingua": "Português",
+      "capa": "https://cdn.discordapp.com/attachments/1174443010486980689/1435008200771502232/firefox_nM5kP5bvEU.png?ex=690a6708&is=69091588&hm=258c52d507d483a9437aee6000d7acb2266f75c3da4d65fde315301b03971517&",
+      "preco": 38.00,
+      "estoque": 1
+    },
+
+    "livro10": {
+      "id": "livro10",
+      "id_escritor": "escritor4",
+      "id_editora": "editora5",
+      "titulo": "O Amor nos Tempos do Cólera",
+      "ano": 1985,
+      "numPags": 368,
+      "estadoConservacao": "em perfeito estado de conservação / sem amarelados / sem grifos ou rasuras / sem marcas de manuseio nas bordas",
+      "descricao": "O Amor nos Tempos do Cólera, de Gabriel García Márquez, é um romance emblemático sobre amor, desejo e a passagem do tempo, acompanhando a vida e os afetos de dois protagonistas ao longo de décadas. A narrativa é sensorial, poética e profunda na representação das emoções humanas.",
+      "genero": "Romance",
+      "ISBN": "9788501028723",
+      "lingua": "Português",
+      "capa": "https://cdn.discordapp.com/attachments/1174443010486980689/1435008215875059845/firefox_sibNnSw0jA.png?ex=690a670b&is=6909158b&hm=41d4475d887ff868fb6d4a4f977150d074abb5b5d11e105186a05a212400abd2&",
+      "preco": 42.00,
+      "estoque": 1
+    },
+
+
+
+    "livro12": {
+      "id": "livro12",
+      "id_escritor": "escritor1",
+      "id_editora": "editora2",
+      "titulo": "Laços de Família",
+      "ano": 1960,
+      "numPags": 150,
+      "estadoConservacao": "em perfeito estado de conservação / sem amarelados / sem grifos ou rasuras / sem marcas de manuseio nas bordas",
+      "descricao": "Laços de Família é uma coletânea de contos de Clarice Lispector que explora relações íntimas, família e dilemas internos. Cada conto traz a escrita aguda da autora, revelando micro-drama humanos em linguagem econômica e penetrante.",
+      "genero": "Contos",
+      "ISBN": "9786555320244",
+      "lingua": "Português",
+      "capa": "https://cdn.discordapp.com/attachments/1174443010486980689/1435008217272029386/firefox_R6dXlkc25I.png?ex=690a670c&is=6909158c&hm=007f23d9c9afcb1cd1c6694e215b7d1472f2c002a4ede65cd70cfa8a81af00cf&",
+      "preco": 30.00,
+      "estoque": 1
+    },
+
+    "livro13": {
+      "id": "livro13",
+      "id_escritor": "escritor2",
+      "id_editora": "editora3",
+      "titulo": "Quincas Borba",
+      "ano": 1891,
+      "numPags": 320,
+      "estadoConservacao": "usado / mínimos amarelados na borda externa / com grifos em poucas paginas / com marcas de manuseio nas bordas",
+      "descricao": "Quincas Borba, de Machado de Assis, explora a personagem Rubião e a filosofia do humanitismo, traçando um retrato satírico e crítico da sociedade. A obra mistura ironia, filosofia e crítica social, em linguagem refinada.",
+      "genero": "Romance",
+      "ISBN": "9788563560520",
+      "lingua": "Português",
+      "capa": "https://cdn.discordapp.com/attachments/1174443010486980689/1435008231524274257/firefox_JacX6tTKEe.png?ex=690a670f&is=6909158f&hm=d81608403b7aa89166f3ec0fe50ebff8bf646103c1d90b282bf8feb63105278f&",
+      "preco": 28.50,
+      "estoque": 1
+    },
+
+    "livro14": {
+      "id": "livro14",
+      "id_escritor": "escritor3",
+      "id_editora": "editora3",
+      "titulo": "1984 – Edição Especial",
+      "ano": 1949,
+      "numPags": 328,
+      "estadoConservacao": "em perfeito estado de conservação / sem amarelados / sem grifos ou rasuras / sem marcas de manuseio nas bordas",
+      "descricao": "1984 é uma das distopias mais influentes de George Orwell, descrevendo um regime totalitário de vigilância e manipulação. A edição especial aqui apresentada inclui notas e material adicional, aprofundando a compreensão da obra e sua relevância contemporânea.",
+      "genero": "Distopia",
+      "ISBN": "9788580864458",
+      "lingua": "Português",
+      "capa": "https://cdn.discordapp.com/attachments/1174443010486980689/1435008230798397586/firefox_i7RJf53EQv.png?ex=690a670f&is=6909158f&hm=288fcab18ec5e1baa3c0f7f57df03dd9b88eca62f93df41a76cd550b6186b343&",
+      "preco": 50.00,
+      "estoque": 1
+    },
+
+    "livro15": {
+      "id": "livro15",
+      "id_escritor": "escritor6",
+      "id_editora": "editora6",
+      "titulo": "Norwegian Wood",
+      "ano": 1987,
+      "numPags": 296,
+      "estadoConservacao": "em perfeito estado de conservação / sem amarelados / sem grifos ou rasuras / sem marcas de manuseio nas bordas",
+      "descricao": "Norwegian Wood, de Haruki Murakami, é um romance melancólico sobre amor, perda e amadurecimento, centrado em Toru Watanabe e suas relações durante a juventude. A escrita é direta, nostálgica e profundamente emotiva.",
+      "genero": "Romance",
+      "ISBN": "9788560281527",
+      "lingua": "Português",
+      "capa": "https://cdn.discordapp.com/attachments/1174443010486980689/1435008232153288864/firefox_EEq8j9kF8r.png?ex=690a670f&is=6909158f&hm=654b9042e13937f301a9928fede2433f80611a26bb6dcdf9c7daf65c6bc344f1&",
+      "preco": 44.00,
+      "estoque": 1
+    },
+
+    "livro16": {
+      "id": "livro16",
+      "id_escritor": "escritor5",
+      "id_editora": "editora4",
+      "titulo": "Crônica de uma Morte Anunciada",
+      "ano": 1981,
+      "numPags": 128,
+      "estadoConservacao": "em perfeito estado de conservação / sem amarelados / sem grifos ou rasuras / sem marcas de manuseio nas bordas",
+      "descricao": "Crônica de uma Morte Anunciada, de Gabriel García Márquez, reconstrói os eventos que antecederam um assassinato anunciado. Com técnica jornalística e literária, a obra explora honra, destino e memória coletiva.",
+      "genero": "Romance",
+      "ISBN": "9788501019431",
+      "lingua": "Português",
+      "capa": "https://cdn.discordapp.com/attachments/1174443010486980689/1435008240772448356/firefox_ESZK735gHg.png?ex=690a6711&is=69091591&hm=51aa202fde6150312f53bfc2feb769b2b60b624822ab1326e59be607028cdf18&",
+      "preco": 33.00,
+      "estoque": 1
+    },
+
+
+ 
+    "livro19": {
+      "id": "livro19",
+      "id_escritor": "escritor7",
+      "id_editora": "editora4",
+      "titulo": "Os Irmãos Karamázov",
+      "ano": 1880,
+      "numPags": 824,
+      "estadoConservacao": "usado / sem amarelados / sem grifos ou rasuras / com marcas de manuseio nas bordas",
+      "descricao": "Os Irmãos Karamázov é o último romance de Dostoiévski. No fundo, ele resume toda a criatividade do escritor, trazendo à baila as questões existenciais que o afligiram a vida inteira, com especial relevo para a degradação moral da sociedade. A narrativa coloca em foco três irmãos — Dmítri, Ivan e Aliocha — representando aspectos diversos da realidade russa, e explora culpa, fé, amor e o abismo da condição humana, numa prosa rica e profunda.",
+      "genero": "Romance",
+      "ISBN": "9788573265385",
+      "lingua": "Português",
+      "capa": "https://cdn.discordapp.com/attachments/1174443010486980689/1435008241275764859/firefox_RAe6wkOjrc.png?ex=690a6711&is=69091591&hm=7316c0c9380c4ac82516163c4c8b4ff750317bd4ef66e05cdaf3d74714e8e421&",
+      "preco": 50.00,
+      "estoque": 1
+    },
+
+    "livro20": {
+      "id": "livro20",
+      "id_escritor": "escritor7",
+      "id_editora": "editora5",
+      "titulo": "Memórias do Subsolo",
+      "ano": 1864,
+      "numPags": 150,
+      "estadoConservacao": "usado / mínimos amarelados na borda externa / sem grifos ou rasuras / com marcas de manuseio nas bordas",
+      "descricao": 
+      "Alienado da sociedade e paralisado pelo peso da própria insignificância, o narrador deste livro conta a história de sua conturbada vida. Com fina ironia, ele relata sua recusa em se tornar mais um trabalhador e seu gradual exílio da sociedade que o cerca."
+      ,
+      "genero": "Filosofia / Romance",
+      "ISBN": "9788582852477",
+      "lingua": "Português",
+      "capa": "https://cdn.discordapp.com/attachments/1174443010486980689/1435008216433164439/firefox_93BZV0i5TE.png?ex=690a670b&is=6909158b&hm=1fc52cac5a0b3aace1ad6edcf6e2412596c5493ac4d43b101d833f4a49ad608d&",
+      "preco": 28.00,
+      "estoque": 1
+    }
+  },
+  
+
+"containerLivros": {
+  "container1": {
+    "id": "container1",
+    "nome": "Clássicos Brasileiros",
+    "livrosContidos": ["livro1", "livro2", "livro12", "livro13"]
+  },
+  "container2": {
+    "id": "container2",
+    "nome": "Ficção Política e Distopia",
+    "livrosContidos": ["livro3", "livro14"]
+  },
+  "container3": {
+    "id": "container3",
+    "nome": "Romances Internacionais",
+    "livrosContidos": ["livro4", "livro5", "livro10", "livro16"]
+  },
+  "container4": {
+    "id": "container4",
+    "nome": "Ficção Contemporânea",
+    "livrosContidos": ["livro6", "livro7", "livro15"]
+  },
+  "container5": {
+    "id": "container5",
+    "nome": "Clássicos Russos",
+    "livrosContidos": ["livro8", "livro9", "livro19", "livro20"]
+  },
+  "container6": {
+    "id": "container6",
+    "nome": "Lançamentos",
+    "livrosContidos": ["livro4", "livro6", "livro10"]
+  }
+},
+
+
+  "livrosComprados": {
+    "compra1": {
+      "id": "compra1",
+      "emailComprador": "user@gmail.com",
+      "data": "2024-01-15",
+      "livrosComprados": ["livro1", "livro2"],
+      "total": 54.40
+    }
+  }
+}
