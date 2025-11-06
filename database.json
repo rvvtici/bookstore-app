@@ -34,27 +34,31 @@
       "genero": "Romance",
       "ISBN": "9786555320350",
       "lingua": "Português",
-      "capa": "https://cdn.discordapp.com/attachments/1174443010486980689/1435008160363581570/firefox_jBJFrfhEVh.png?ex=690a66fe&is=6909157e&hm=42546ceb347427f1172096c113dd65df5a976d461940e1e4e4269d35d5490ab2&",
+      "capa": 
+      "https://i.imgur.com/vO8m3WN.png"
+      ,
       "preco": 29.90,
       "estoque": 1
     },
 
-"livro2": {
-  "id": "livro2",
-  "id_escritor": "escritor2",
-  "id_editora": "editora1",
-  "titulo": "Dom Casmurro",
-  "ano": 1899,
-  "numPags": 256,
-  "estadoConservacao": "usado / sem amarelados / com grifos / com marcas de manuseio nas bordas",
-  "descricao": "Dom Casmurro, de Machado de Assis, é um clássico da literatura brasileira que acompanha a memória e as percepções de Bento Santiago (Bentinho). A narrativa, construída com ironia e sutileza psicológica, investiga ciúmes, dúvida e as ambiguidades da lembrança. Ao longo do romance, o leitor é levado a confrontar a confiabilidade do narrador e a complexidade das relações humanas, com linguagem refinada e análise social profunda.",
-  "genero": "Romance",
-  "ISBN": "9788582850350",
-  "lingua": "Português",
-  "capa": "https://cdn.discordapp.com/attachments/1174443010486980689/1435008159688429729/firefox_EFwbinirKT.png?ex=690a66fe&is=6909157e&hm=8918a4636f5afe8c4e402212995528784f294b8a3336fde1ced69d9f92a9c245&",
-  "preco": 24.50,
-  "estoque": 1
-},
+    "livro2": {
+      "id": "livro2",
+      "id_escritor": "escritor2",
+      "id_editora": "editora1",
+      "titulo": "Dom Casmurro",
+      "ano": 1899,
+      "numPags": 256,
+      "estadoConservacao": "usado / sem amarelados / com grifos / com marcas de manuseio nas bordas",
+      "descricao": "Dom Casmurro, de Machado de Assis, é um clássico da literatura brasileira que acompanha a memória e as percepções de Bento Santiago (Bentinho). A narrativa, construída com ironia e sutileza psicológica, investiga ciúmes, dúvida e as ambiguidades da lembrança. Ao longo do romance, o leitor é levado a confrontar a confiabilidade do narrador e a complexidade das relações humanas, com linguagem refinada e análise social profunda.",
+      "genero": "Romance",
+      "ISBN": "9788582850350",
+      "lingua": "Português",
+      "capa": 
+      "https://i.imgur.com/ib4Jw7d.png"
+      ,
+      "preco": 24.50,
+      "estoque": 1
+    },
 
 
     "livro3": {
@@ -69,7 +73,9 @@
       "genero": "Fábula Política",
       "ISBN": "9788535909555",
       "lingua": "Português",
-      "capa": "https://cdn.discordapp.com/attachments/1174443010486980689/1435008159231246448/firefox_p7ELjtIyrT.png?ex=690a66fe&is=6909157e&hm=2c6e2889a79ec950dadec84f3058c68564d3ac1c96aefafd18560cf70fab6309&",
+      "capa": 
+      "https://i.imgur.com/jGbgG5V.png"
+      ,
       "preco": 32.00,
       "estoque": 1
     },
@@ -86,7 +92,9 @@
       "genero": "Realismo Mágico",
       "ISBN": "9788501012074",
       "lingua": "Português",
-      "capa": "https://cdn.discordapp.com/attachments/1174443010486980689/1435008175387705386/firefox_6gzU1b6XHM.png?ex=690a6702&is=69091582&hm=7755c68cbe5c0665ccd415c6d942224a0e1b20ada6d578a69049d6a383effd55&",
+      "capa": 
+      "https://i.imgur.com/0p1FXSP.png"
+      ,
       "preco": 45.00,
       "estoque": 1
     },
@@ -103,7 +111,9 @@
       "genero": "Romance",
       "ISBN": "9788528622560",
       "lingua": "Português",
-      "capa": "https://cdn.discordapp.com/attachments/1174443010486980689/1435008174913487019/firefox_CD1C5cORiv.png?ex=690a6702&is=69091582&hm=448a9561e70ed08e369131d3776ad679a416afbf2ac6c6a2ce52bd0633c60b20&",
+      "capa": 
+      "https://i.imgur.com/6HXu5wc.png"
+      ,
       "preco": 40.00,
       "estoque": 1
     },
@@ -118,9 +128,11 @@
       "estadoConservacao": "em perfeito estado de conservação / sem amarelados / sem grifos ou rasuras / sem marcas de manuseio nas bordas",
       "descricao": "Kafka à Beira-Mar, de Haruki Murakami, é um romance que combina realismo e elementos surreais, acompanhando duas tramas que se entrelaçam: a de um jovem fugindo de casa e a de um homem idoso com habilidades estranhas. A narrativa é repleta de simbolismo, personagens singulares e uma atmosfera onírica que convida à reflexão sobre destino, memória e identidade.",
       "genero": "Ficção Contemporânea",
-      "ISBN": "ISBN_TO_VERIFY",
+      "ISBN": "9788560281428",
       "lingua": "Português",
-      "capa": "https://cdn.discordapp.com/attachments/1174443010486980689/1435008176134160427/firefox_uobpUv7DQA.png?ex=690a6702&is=69091582&hm=68688daba6984a52805968fac82953f26805314317fcbd7061e9b092b16d3cba&",
+      "capa": 
+      "https://i.imgur.com/eF7ubsB.png"
+      ,
       "preco": 48.00,
       "estoque": 1
     },
@@ -137,7 +149,9 @@
       "genero": "Ficção Contemporânea",
       "ISBN": "9788579621802",
       "lingua": "Português",
-      "capa": "https://cdn.discordapp.com/attachments/1174443010486980689/1435008200029114589/firefox_K7NrKZhsaW.png?ex=690a6708&is=69091588&hm=9c4365f16f8571fcf70bf74ad61358503418517ec54d8e71d194a1093b5efdf0&",
+      "capa": 
+      "https://i.imgur.com/hARZSMD.png"
+      ,
       "preco": 55.00,
       "estoque": 1
     },
@@ -154,7 +168,9 @@
       "genero": "Romance",
       "ISBN": "9788573266467",
       "lingua": "Português",
-      "capa": "https://cdn.discordapp.com/attachments/1174443010486980689/1435008198560972922/firefox_lYmiSLyLNv.png?ex=690a6707&is=69091587&hm=8518502d9b62fadbef9a2036d027cb32722a3f92723ea2c2f79ee1e7dfeb181c&",
+      "capa": 
+      "https://i.imgur.com/GyeOo3j.png"
+      ,
       "preco": 35.00,
       "estoque": 1
     },
@@ -171,7 +187,9 @@
       "genero": "Romance",
       "ISBN": "9786555250268",
       "lingua": "Português",
-      "capa": "https://cdn.discordapp.com/attachments/1174443010486980689/1435008200771502232/firefox_nM5kP5bvEU.png?ex=690a6708&is=69091588&hm=258c52d507d483a9437aee6000d7acb2266f75c3da4d65fde315301b03971517&",
+      "capa": 
+      "https://i.imgur.com/qLunqos.png"
+      ,
       "preco": 38.00,
       "estoque": 1
     },
@@ -188,7 +206,9 @@
       "genero": "Romance",
       "ISBN": "9788501028723",
       "lingua": "Português",
-      "capa": "https://cdn.discordapp.com/attachments/1174443010486980689/1435008215875059845/firefox_sibNnSw0jA.png?ex=690a670b&is=6909158b&hm=41d4475d887ff868fb6d4a4f977150d074abb5b5d11e105186a05a212400abd2&",
+      "capa": 
+      "https://i.imgur.com/V7n5GQA.png"
+      ,
       "preco": 42.00,
       "estoque": 1
     },
@@ -207,7 +227,9 @@
       "genero": "Contos",
       "ISBN": "9786555320244",
       "lingua": "Português",
-      "capa": "https://cdn.discordapp.com/attachments/1174443010486980689/1435008217272029386/firefox_R6dXlkc25I.png?ex=690a670c&is=6909158c&hm=007f23d9c9afcb1cd1c6694e215b7d1472f2c002a4ede65cd70cfa8a81af00cf&",
+      "capa": 
+      "https://i.imgur.com/2kFtLA8.png"
+      ,
       "preco": 30.00,
       "estoque": 1
     },
@@ -224,7 +246,9 @@
       "genero": "Romance",
       "ISBN": "9788563560520",
       "lingua": "Português",
-      "capa": "https://cdn.discordapp.com/attachments/1174443010486980689/1435008231524274257/firefox_JacX6tTKEe.png?ex=690a670f&is=6909158f&hm=d81608403b7aa89166f3ec0fe50ebff8bf646103c1d90b282bf8feb63105278f&",
+      "capa": 
+      "https://i.imgur.com/0HiRKVo.png"
+      ,
       "preco": 28.50,
       "estoque": 1
     },
@@ -233,7 +257,7 @@
       "id": "livro14",
       "id_escritor": "escritor3",
       "id_editora": "editora3",
-      "titulo": "1984 – Edição Especial",
+      "titulo": "1984",
       "ano": 1949,
       "numPags": 328,
       "estadoConservacao": "em perfeito estado de conservação / sem amarelados / sem grifos ou rasuras / sem marcas de manuseio nas bordas",
@@ -241,7 +265,9 @@
       "genero": "Distopia",
       "ISBN": "9788580864458",
       "lingua": "Português",
-      "capa": "https://cdn.discordapp.com/attachments/1174443010486980689/1435008230798397586/firefox_i7RJf53EQv.png?ex=690a670f&is=6909158f&hm=288fcab18ec5e1baa3c0f7f57df03dd9b88eca62f93df41a76cd550b6186b343&",
+      "capa": 
+      "https://i.imgur.com/6FWZc7V.png"
+      ,
       "preco": 50.00,
       "estoque": 1
     },
@@ -258,7 +284,9 @@
       "genero": "Romance",
       "ISBN": "9788560281527",
       "lingua": "Português",
-      "capa": "https://cdn.discordapp.com/attachments/1174443010486980689/1435008232153288864/firefox_EEq8j9kF8r.png?ex=690a670f&is=6909158f&hm=654b9042e13937f301a9928fede2433f80611a26bb6dcdf9c7daf65c6bc344f1&",
+      "capa": 
+      "https://i.imgur.com/fV2HtBM.png"
+      ,
       "preco": 44.00,
       "estoque": 1
     },
@@ -275,7 +303,9 @@
       "genero": "Romance",
       "ISBN": "9788501019431",
       "lingua": "Português",
-      "capa": "https://cdn.discordapp.com/attachments/1174443010486980689/1435008240772448356/firefox_ESZK735gHg.png?ex=690a6711&is=69091591&hm=51aa202fde6150312f53bfc2feb769b2b60b624822ab1326e59be607028cdf18&",
+      "capa": 
+      "https://i.imgur.com/wrtGKxV.png"
+      ,
       "preco": 33.00,
       "estoque": 1
     },
@@ -294,7 +324,9 @@
       "genero": "Romance",
       "ISBN": "9788573265385",
       "lingua": "Português",
-      "capa": "https://cdn.discordapp.com/attachments/1174443010486980689/1435008241275764859/firefox_RAe6wkOjrc.png?ex=690a6711&is=69091591&hm=7316c0c9380c4ac82516163c4c8b4ff750317bd4ef66e05cdaf3d74714e8e421&",
+      "capa": 
+      "https://i.imgur.com/sxAB6yX.png"
+      ,
       "preco": 50.00,
       "estoque": 1
     },
@@ -313,7 +345,9 @@
       "genero": "Filosofia / Romance",
       "ISBN": "9788582852477",
       "lingua": "Português",
-      "capa": "https://cdn.discordapp.com/attachments/1174443010486980689/1435008216433164439/firefox_93BZV0i5TE.png?ex=690a670b&is=6909158b&hm=1fc52cac5a0b3aace1ad6edcf6e2412596c5493ac4d43b101d833f4a49ad608d&",
+      "capa": 
+      "https://i.imgur.com/1rLAMpI.png"
+      ,
       "preco": 28.00,
       "estoque": 1
     }
